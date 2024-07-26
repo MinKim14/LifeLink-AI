@@ -1,4 +1,4 @@
-# WearableGemini
+# WearableGemini   - Gemini API competition
 Welcome to the Wearable Gemini repository! This project aims to develop a comprehensive wearable technology solution that seamlessly integrates an Apple Watch and an iPhone application using SwiftUI, along with a Python server backend. The system leverages Firebase for data communication and storage. The core functionalities include:
 
 # Core Functionalities
