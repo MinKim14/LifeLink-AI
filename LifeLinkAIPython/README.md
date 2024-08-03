@@ -66,6 +66,9 @@ git clone https://huggingface.co/google/flan-t5-base
 5. Download Pretrained Model
 Download model_log folder from [google_drive](https://drive.google.com/drive/folders/1_vGg8MtB8ZGIyeM4udXt6K5TSnqrZ6Vw?usp=drive_link)
 
+(Optional) 6. Try sample paired data
+Sample paired data "sample_paired_data.pkl" having "walking", "eating" and "working" is in [google_drive](https://drive.google.com/drive/folders/1_vGg8MtB8ZGIyeM4udXt6K5TSnqrZ6Vw?usp=drive_link), you can download paired data and rename it as paired_data_{user_id}.pkl to allow models to more easily recognize basic activities. 
+
 ## Running the Handler
 To start the server, run:
 ```bash
@@ -80,7 +83,7 @@ pip install google-cloud-aiplatform
 2. Initialize Google Cloud SDK
 Follow the instructions at [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk) to initialize the SDK for using Vertex AI on a local server.
 
-3. Run Daily Image Generation
+(Optional) 3. Run Daily Image Generation
 ```bash
 python daily_image_generation.py
 ```
