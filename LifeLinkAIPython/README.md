@@ -20,7 +20,7 @@ This README provides instructions for setting up and running the LifeLinkAI Pyth
 1. **Generate Firebase Admin SDK Private Key**
    - Go to Firebase project settings → Service accounts
    - Generate a new private key for Python
-   - Save the key file to the `authentication` folder
+   - Save the key file to the `authentication/` folder
 
 ### Environment Variables
 
@@ -63,6 +63,8 @@ cd model/vmGpt/deps
 git lfs install
 git clone https://huggingface.co/google/flan-t5-base
 ```
+5. Download Pretrained Model
+Download model_log folder from [google_drive](https://drive.google.com/drive/folders/1_vGg8MtB8ZGIyeM4udXt6K5TSnqrZ6Vw?usp=drive_link)
 
 ## Running the Handler
 To start the server, run:
