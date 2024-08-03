@@ -9,16 +9,13 @@
   <i>#BuildWithGemini</i> <br>
 </div>
 
-<br/>
-
+# Project Video [![Youtube Badge]](https://youtu.be/OPFlCPFZWHI)
 <h2 align="center">
   <br>
   ⭐️ Life Link AI ⭐
   <br>
 </h2>
-
 # LifeLinkAI
-
 <br> Time flies, and we often lose track of our daily activities. However, keeping a daily diary is cumbersome, making automatic recognition essential. Life Link AI provides a solution with seamless AI interaction through motion. <br>
 
 Life Link AI is a cutting-edge app designed to effortlessly capture and summarize your daily life using motion sensors in your smartwatch. Our innovative app offers a range of functionalities to ensure you never miss a moment.
