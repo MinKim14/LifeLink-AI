@@ -1,0 +1,31 @@
+model:
+  type: FeedforwardNN
+  input_size: 784
+  hidden_layers:
+    - 128
+    - 64
+  output_size: 10
+
+
+inference_model:
+  device : "cuda"
+  watch_poser:
+    model_path: "model_log/watch_poser.pt"
+    n_imu : 12
+    joint_output_dim : 72
+    pose_output_dim : 72
+    vel_output_dim : 3
+    d_model : 128
+    d_embedding : 128
+    n_head : 6
+    n_layers : 8
+    dropout : 0.1
+    n_position : 700
+
+  left_imu_encoder:
+    model_path: "model_log/imu_encoder.pt"
+    n_imu: 12
+    n_layers: 1
+    n_head: 4
+    d_model: 128
+
