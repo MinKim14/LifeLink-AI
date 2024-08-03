@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90076E222C3FD42000B0D211 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497EE8A294C58A8007AD721 /* MessageManager.swift */; };
+		903743F52C5DCDEC00E1E64F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 903743F42C5DCDEC00E1E64F /* GoogleService-Info.plist */; };
+		9047D2AD2C4F805F005EC3BE /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9047D2A92C4F805F005EC3BE /* ChatModel.swift */; };
+		9047D2AE2C4F805F005EC3BE /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9047D2AA2C4F805F005EC3BE /* ChatView.swift */; };
+		9047D2AF2C4F805F005EC3BE /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9047D2AB2C4F805F005EC3BE /* PieChartView.swift */; };
+		905254A12C2ADD4600B4882C /* PhoneConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905254A02C2ADD4600B4882C /* PhoneConnectivity.swift */; };
+		905254A52C2ADDD500B4882C /* DataItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431B80F29557D950015376C /* DataItemView.swift */; };
+		90720A3B2C5DB4EE00968141 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90720A3A2C5DB4EE00968141 /* WatchConnector.swift */; };
+		90720A3E2C5DB5C500968141 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90720A3D2C5DB5C500968141 /* LineChart.swift */; };
+		90720A3F2C5DB5E800968141 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90720A3D2C5DB5C500968141 /* LineChart.swift */; };
+		C429225729544BD700064453 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C429225629544BD700064453 /* MobileCoreServices.framework */; };
+		C429225929544C2B00064453 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C429225829544C2B00064453 /* CoreServices.framework */; };
+		C431B81029557D950015376C /* DataItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431B80F29557D950015376C /* DataItemView.swift */; };
+		C431B81329596DC30015376C /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431B81229596DC30015376C /* WorkoutManager.swift */; };
+		C4864A3C2A67A8F8007C951D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C4864A3B2A67A8F8007C951D /* FirebaseAuth */; };
+		C4864A3E2A67A904007C951D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C4864A3D2A67A904007C951D /* FirebaseDatabase */; };
+		C4864A402A67A904007C951D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C4864A3F2A67A904007C951D /* FirebaseFirestore */; };
+		C4864A422A67A904007C951D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C4864A412A67A904007C951D /* FirebaseStorage */; };
+		C4864A4E2A67C584007C951D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4864A4D2A67C584007C951D /* SystemConfiguration.framework */; };
+		C488357E29500399004277E7 /* ImuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488357C29500399004277E7 /* ImuDataModel.swift */; };
+		C488358129501F2D004277E7 /* AuthViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488358029501F2D004277E7 /* AuthViewModelWatch.swift */; };
+		C488358229501F2D004277E7 /* AuthViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488358029501F2D004277E7 /* AuthViewModelWatch.swift */; };
+		C488358C2950495E004277E7 /* ImuDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488358B2950495E004277E7 /* ImuDataViewModel.swift */; };
+		C488358D2950495E004277E7 /* ImuDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488358B2950495E004277E7 /* ImuDataViewModel.swift */; };
+		C4883590295056E3004277E7 /* AccModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488358F295056E3004277E7 /* AccModel.swift */; };
+		C4883591295056E3004277E7 /* AccModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488358F295056E3004277E7 /* AccModel.swift */; };
+		C488359329508B75004277E7 /* GyroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488359229508B75004277E7 /* GyroModel.swift */; };
+		C488359429508B75004277E7 /* GyroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488359229508B75004277E7 /* GyroModel.swift */; };
+		C488359E2953EAF1004277E7 /* ChartFirebaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488359D2953EAF1004277E7 /* ChartFirebaseView.swift */; };
+		C48835A129543BD6004277E7 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48835A029543BD6004277E7 /* RowView.swift */; };
+		C497EE84294C5832007AD721 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C497EE83294C5832007AD721 /* FirebaseAuth */; };
+		C497EE86294C5839007AD721 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C497EE85294C5839007AD721 /* FirebaseFirestore */; };
+		C497EE88294C583F007AD721 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C497EE87294C583F007AD721 /* FirebaseStorage */; };
+		C497EE8D294C58D4007AD721 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C497EE8C294C58D4007AD721 /* FirebaseDatabase */; };
+		C4AEFA2129484E690047AB28 /* LifeLinkAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA2029484E690047AB28 /* LifeLinkAIApp.swift */; };
+		C4AEFA2529484E6A0047AB28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AEFA2429484E6A0047AB28 /* Assets.xcassets */; };
+		C4AEFA2829484E6A0047AB28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AEFA2729484E6A0047AB28 /* Preview Assets.xcassets */; };
+		C4AEFA2E29484E6B0047AB28 /* LifeLinkAI Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C4AEFA2D29484E6A0047AB28 /* LifeLinkAI Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4AEFA3329484E6B0047AB28 /* LifeLinkAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA3229484E6B0047AB28 /* LifeLinkAIApp.swift */; };
+		C4AEFA3529484E6B0047AB28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA3429484E6B0047AB28 /* ContentView.swift */; };
+		C4AEFA3729484E6C0047AB28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AEFA3629484E6C0047AB28 /* Assets.xcassets */; };
+		C4AEFA3A29484E6C0047AB28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AEFA3929484E6C0047AB28 /* Preview Assets.xcassets */; };
+		C4AEFA5F294AA7F90047AB28 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA5E294AA7F90047AB28 /* AuthViewModel.swift */; };
+		C4AEFA70294AD28D0047AB28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA6F294AD28D0047AB28 /* ContentView.swift */; };
+		C4AEFA75294AD5260047AB28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA74294AD5260047AB28 /* LoginView.swift */; };
+		C4AEFA77294AD54C0047AB28 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA76294AD54C0047AB28 /* RegistrationView.swift */; };
+		C4AEFA96294AE3610047AB28 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA95294AE3610047AB28 /* CustomInputField.swift */; };
+		C4AEFA99294AEEA40047AB28 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEFA98294AEEA40047AB28 /* AuthHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4AEFA2F29484E6B0047AB28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4AEFA1529484E680047AB28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4AEFA2C29484E6A0047AB28;
+			remoteInfo = "WatchFirebase Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4AEFA4029484E6C0047AB28 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C4AEFA2E29484E6B0047AB28 /* LifeLinkAI Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		903743F42C5DCDEC00E1E64F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9047D2A92C4F805F005EC3BE /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		9047D2AA2C4F805F005EC3BE /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		9047D2AB2C4F805F005EC3BE /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		905254A02C2ADD4600B4882C /* PhoneConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnectivity.swift; sourceTree = "<group>"; };
+		90720A3A2C5DB4EE00968141 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		90720A3D2C5DB5C500968141 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		C429225629544BD700064453 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C429225829544C2B00064453 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C431B80F29557D950015376C /* DataItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItemView.swift; sourceTree = "<group>"; };
+		C431B81229596DC30015376C /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		C431B8142959832A0015376C /* LifeLinkAI Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LifeLinkAI Watch App.entitlements"; sourceTree = "<group>"; };
+		C431B815295983590015376C /* LifeLinkAI-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LifeLinkAI-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C431B81D295E7ABA0015376C /* LifeLinkAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LifeLinkAI.entitlements; sourceTree = "<group>"; };
+		C4864A4D2A67C584007C951D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		C488357C29500399004277E7 /* ImuDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImuDataModel.swift; sourceTree = "<group>"; };
+		C488358029501F2D004277E7 /* AuthViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModelWatch.swift; sourceTree = "<group>"; };
+		C488358B2950495E004277E7 /* ImuDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImuDataViewModel.swift; sourceTree = "<group>"; };
+		C488358F295056E3004277E7 /* AccModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccModel.swift; sourceTree = "<group>"; };
+		C488359229508B75004277E7 /* GyroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroModel.swift; sourceTree = "<group>"; };
+		C488359D2953EAF1004277E7 /* ChartFirebaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartFirebaseView.swift; sourceTree = "<group>"; };
+		C48835A029543BD6004277E7 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		C497EE8A294C58A8007AD721 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
+		C4AEFA1D29484E690047AB28 /* LifeLinkAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeLinkAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AEFA2029484E690047AB28 /* LifeLinkAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeLinkAIApp.swift; sourceTree = "<group>"; };
+		C4AEFA2429484E6A0047AB28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4AEFA2729484E6A0047AB28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4AEFA2D29484E6A0047AB28 /* LifeLinkAI Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LifeLinkAI Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AEFA3229484E6B0047AB28 /* LifeLinkAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeLinkAIApp.swift; sourceTree = "<group>"; };
+		C4AEFA3429484E6B0047AB28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4AEFA3629484E6C0047AB28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4AEFA3929484E6C0047AB28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4AEFA4E294861D70047AB28 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C4AEFA5E294AA7F90047AB28 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C4AEFA6F294AD28D0047AB28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4AEFA74294AD5260047AB28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C4AEFA76294AD54C0047AB28 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		C4AEFA95294AE3610047AB28 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		C4AEFA98294AEEA40047AB28 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4AEFA1A29484E690047AB28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4864A4E2A67C584007C951D /* SystemConfiguration.framework in Frameworks */,
+				C4864A3E2A67A904007C951D /* FirebaseDatabase in Frameworks */,
+				C4864A422A67A904007C951D /* FirebaseStorage in Frameworks */,
+				C4864A3C2A67A8F8007C951D /* FirebaseAuth in Frameworks */,
+				C4864A402A67A904007C951D /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AEFA2A29484E6A0047AB28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C429225929544C2B00064453 /* CoreServices.framework in Frameworks */,
+				C429225729544BD700064453 /* MobileCoreServices.framework in Frameworks */,
+				C497EE84294C5832007AD721 /* FirebaseAuth in Frameworks */,
+				C497EE86294C5839007AD721 /* FirebaseFirestore in Frameworks */,
+				C497EE8D294C58D4007AD721 /* FirebaseDatabase in Frameworks */,
+				C497EE88294C583F007AD721 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9047D2AC2C4F805F005EC3BE /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9047D2A92C4F805F005EC3BE /* ChatModel.swift */,
+				9047D2AA2C4F805F005EC3BE /* ChatView.swift */,
+				9047D2AB2C4F805F005EC3BE /* PieChartView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		9047D2B02C5DB435005EC3BE /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				90720A3A2C5DB4EE00968141 /* WatchConnector.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		90720A3C2C5DB5AD00968141 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				90720A3D2C5DB5C500968141 /* LineChart.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		C431B81129596DAC0015376C /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				C431B81229596DC30015376C /* WorkoutManager.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		C4864A462A67BA25007C951D /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				905254A02C2ADD4600B4882C /* PhoneConnectivity.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		C488357B29500385004277E7 /* IMU */ = {
+			isa = PBXGroup;
+			children = (
+				C488358E295056A2004277E7 /* SingleModel */,
+				C488357C29500399004277E7 /* ImuDataModel.swift */,
+				C488358B2950495E004277E7 /* ImuDataViewModel.swift */,
+			);
+			path = IMU;
+			sourceTree = "<group>";
+		};
+		C488357F29501EFB004277E7 /* Authetication */ = {
+			isa = PBXGroup;
+			children = (
+				C488358029501F2D004277E7 /* AuthViewModelWatch.swift */,
+			);
+			path = Authetication;
+			sourceTree = "<group>";
+		};
+		C48835832950212E004277E7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C488359F29543BBF004277E7 /* Item */,
+				C48835992952F5F9004277E7 /* PlotFirebaseView */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C488358E295056A2004277E7 /* SingleModel */ = {
+			isa = PBXGroup;
+			children = (
+				C488358F295056E3004277E7 /* AccModel.swift */,
+				C488359229508B75004277E7 /* GyroModel.swift */,
+			);
+			path = SingleModel;
+			sourceTree = "<group>";
+		};
+		C48835992952F5F9004277E7 /* PlotFirebaseView */ = {
+			isa = PBXGroup;
+			children = (
+				C488359D2953EAF1004277E7 /* ChartFirebaseView.swift */,
+			);
+			path = PlotFirebaseView;
+			sourceTree = "<group>";
+		};
+		C488359F29543BBF004277E7 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				C48835A029543BD6004277E7 /* RowView.swift */,
+				C431B80F29557D950015376C /* DataItemView.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		C497EE82294C5832007AD721 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4864A4D2A67C584007C951D /* SystemConfiguration.framework */,
+				C429225829544C2B00064453 /* CoreServices.framework */,
+				C429225629544BD700064453 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C497EE89294C5890007AD721 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C497EE8A294C58A8007AD721 /* MessageManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C4AEFA1429484E680047AB28 = {
+			isa = PBXGroup;
+			children = (
+				90720A3C2C5DB5AD00968141 /* Chart */,
+				C488357B29500385004277E7 /* IMU */,
+				C4AEFA1F29484E690047AB28 /* LifeLinkAI */,
+				C4AEFA3129484E6B0047AB28 /* LifeLinkAI Watch App */,
+				C4AEFA1E29484E690047AB28 /* Products */,
+				C497EE82294C5832007AD721 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4AEFA1E29484E690047AB28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA1D29484E690047AB28 /* LifeLinkAI.app */,
+				C4AEFA2D29484E6A0047AB28 /* LifeLinkAI Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4AEFA1F29484E690047AB28 /* LifeLinkAI */ = {
+			isa = PBXGroup;
+			children = (
+				9047D2B02C5DB435005EC3BE /* Connectivity */,
+				C431B81D295E7ABA0015376C /* LifeLinkAI.entitlements */,
+				C4AEFA73294AD41C0047AB28 /* Core */,
+				C4AEFA6F294AD28D0047AB28 /* ContentView.swift */,
+				C4AEFA2029484E690047AB28 /* LifeLinkAIApp.swift */,
+				903743F42C5DCDEC00E1E64F /* GoogleService-Info.plist */,
+				C4AEFA2429484E6A0047AB28 /* Assets.xcassets */,
+				C4AEFA2629484E6A0047AB28 /* Preview Content */,
+			);
+			path = LifeLinkAI;
+			sourceTree = "<group>";
+		};
+		C4AEFA2629484E6A0047AB28 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA4E294861D70047AB28 /* ImagePicker.swift */,
+				C4AEFA2729484E6A0047AB28 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4AEFA3129484E6B0047AB28 /* LifeLinkAI Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C4864A462A67BA25007C951D /* Connectivity */,
+				C431B815295983590015376C /* LifeLinkAI-Watch-App-Info.plist */,
+				C431B8142959832A0015376C /* LifeLinkAI Watch App.entitlements */,
+				C431B81129596DAC0015376C /* Workout */,
+				C48835832950212E004277E7 /* Core */,
+				C488357F29501EFB004277E7 /* Authetication */,
+				C497EE89294C5890007AD721 /* Service */,
+				C4AEFA3229484E6B0047AB28 /* LifeLinkAIApp.swift */,
+				C4AEFA3429484E6B0047AB28 /* ContentView.swift */,
+				C4AEFA3629484E6C0047AB28 /* Assets.xcassets */,
+				C4AEFA3829484E6C0047AB28 /* Preview Content */,
+			);
+			path = "LifeLinkAI Watch App";
+			sourceTree = "<group>";
+		};
+		C4AEFA3829484E6C0047AB28 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA3929484E6C0047AB28 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4AEFA5B294AA7B80047AB28 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA5C294AA7CD0047AB28 /* ViewModel */,
+				C4AEFA5D294AA7D50047AB28 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C4AEFA5C294AA7CD0047AB28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA5E294AA7F90047AB28 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4AEFA5D294AA7D50047AB28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA74294AD5260047AB28 /* LoginView.swift */,
+				C4AEFA76294AD54C0047AB28 /* RegistrationView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C4AEFA73294AD41C0047AB28 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9047D2AC2C4F805F005EC3BE /* Chat */,
+				C4AEFA78294AD61E0047AB28 /* Components */,
+				C4AEFA5B294AA7B80047AB28 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C4AEFA78294AD61E0047AB28 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA97294AEE830047AB28 /* Authentication */,
+				C4AEFA95294AE3610047AB28 /* CustomInputField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C4AEFA97294AEE830047AB28 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEFA98294AEEA40047AB28 /* AuthHeaderView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4AEFA1C29484E690047AB28 /* LifeLinkAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AEFA4129484E6C0047AB28 /* Build configuration list for PBXNativeTarget "LifeLinkAI" */;
+			buildPhases = (
+				C4AEFA1929484E690047AB28 /* Sources */,
+				C4AEFA1A29484E690047AB28 /* Frameworks */,
+				C4AEFA1B29484E690047AB28 /* Resources */,
+				C4AEFA4029484E6C0047AB28 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4AEFA3029484E6B0047AB28 /* PBXTargetDependency */,
+			);
+			name = LifeLinkAI;
+			packageProductDependencies = (
+				C4864A3B2A67A8F8007C951D /* FirebaseAuth */,
+				C4864A3D2A67A904007C951D /* FirebaseDatabase */,
+				C4864A3F2A67A904007C951D /* FirebaseFirestore */,
+				C4864A412A67A904007C951D /* FirebaseStorage */,
+			);
+			productName = WatchFirebase;
+			productReference = C4AEFA1D29484E690047AB28 /* LifeLinkAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4AEFA2C29484E6A0047AB28 /* LifeLinkAI Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AEFA3D29484E6C0047AB28 /* Build configuration list for PBXNativeTarget "LifeLinkAI Watch App" */;
+			buildPhases = (
+				C4AEFA2929484E6A0047AB28 /* Sources */,
+				C4AEFA2A29484E6A0047AB28 /* Frameworks */,
+				C4AEFA2B29484E6A0047AB28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LifeLinkAI Watch App";
+			packageProductDependencies = (
+				C497EE83294C5832007AD721 /* FirebaseAuth */,
+				C497EE85294C5839007AD721 /* FirebaseFirestore */,
+				C497EE87294C583F007AD721 /* FirebaseStorage */,
+				C497EE8C294C58D4007AD721 /* FirebaseDatabase */,
+			);
+			productName = "WatchFirebase Watch App";
+			productReference = C4AEFA2D29484E6A0047AB28 /* LifeLinkAI Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4AEFA1529484E680047AB28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C4AEFA1C29484E690047AB28 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C4AEFA2C29484E6A0047AB28 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = C4AEFA1829484E680047AB28 /* Build configuration list for PBXProject "LifeLinkAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4AEFA1429484E680047AB28;
+			packageReferences = (
+				C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C4AEFA1E29484E690047AB28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4AEFA1C29484E690047AB28 /* LifeLinkAI */,
+				C4AEFA2C29484E6A0047AB28 /* LifeLinkAI Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4AEFA1B29484E690047AB28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AEFA2829484E6A0047AB28 /* Preview Assets.xcassets in Resources */,
+				903743F52C5DCDEC00E1E64F /* GoogleService-Info.plist in Resources */,
+				C4AEFA2529484E6A0047AB28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AEFA2B29484E6A0047AB28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AEFA3A29484E6C0047AB28 /* Preview Assets.xcassets in Resources */,
+				C4AEFA3729484E6C0047AB28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4AEFA1929484E690047AB28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AEFA75294AD5260047AB28 /* LoginView.swift in Sources */,
+				C4883590295056E3004277E7 /* AccModel.swift in Sources */,
+				C4AEFA5F294AA7F90047AB28 /* AuthViewModel.swift in Sources */,
+				905254A52C2ADDD500B4882C /* DataItemView.swift in Sources */,
+				C488359329508B75004277E7 /* GyroModel.swift in Sources */,
+				C4AEFA70294AD28D0047AB28 /* ContentView.swift in Sources */,
+				90720A3E2C5DB5C500968141 /* LineChart.swift in Sources */,
+				9047D2AE2C4F805F005EC3BE /* ChatView.swift in Sources */,
+				C4AEFA96294AE3610047AB28 /* CustomInputField.swift in Sources */,
+				C4AEFA77294AD54C0047AB28 /* RegistrationView.swift in Sources */,
+				C488358C2950495E004277E7 /* ImuDataViewModel.swift in Sources */,
+				C488358129501F2D004277E7 /* AuthViewModelWatch.swift in Sources */,
+				C4AEFA2129484E690047AB28 /* LifeLinkAIApp.swift in Sources */,
+				90720A3B2C5DB4EE00968141 /* WatchConnector.swift in Sources */,
+				9047D2AF2C4F805F005EC3BE /* PieChartView.swift in Sources */,
+				90076E222C3FD42000B0D211 /* MessageManager.swift in Sources */,
+				C4AEFA99294AEEA40047AB28 /* AuthHeaderView.swift in Sources */,
+				9047D2AD2C4F805F005EC3BE /* ChatModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AEFA2929484E6A0047AB28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C488358D2950495E004277E7 /* ImuDataViewModel.swift in Sources */,
+				C431B81329596DC30015376C /* WorkoutManager.swift in Sources */,
+				C4883591295056E3004277E7 /* AccModel.swift in Sources */,
+				C488359429508B75004277E7 /* GyroModel.swift in Sources */,
+				C488358229501F2D004277E7 /* AuthViewModelWatch.swift in Sources */,
+				90720A3F2C5DB5E800968141 /* LineChart.swift in Sources */,
+				C4AEFA3529484E6B0047AB28 /* ContentView.swift in Sources */,
+				C48835A129543BD6004277E7 /* RowView.swift in Sources */,
+				C488359E2953EAF1004277E7 /* ChartFirebaseView.swift in Sources */,
+				C4AEFA3329484E6B0047AB28 /* LifeLinkAIApp.swift in Sources */,
+				905254A12C2ADD4600B4882C /* PhoneConnectivity.swift in Sources */,
+				C431B81029557D950015376C /* DataItemView.swift in Sources */,
+				C488357E29500399004277E7 /* ImuDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4AEFA3029484E6B0047AB28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4AEFA2C29484E6A0047AB28 /* LifeLinkAI Watch App */;
+			targetProxy = C4AEFA2F29484E6B0047AB28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4AEFA3B29484E6C0047AB28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4AEFA3C29484E6C0047AB28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C4AEFA3E29484E6C0047AB28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "LifeLinkAI Watch App/LifeLinkAI Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeLinkAI Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = A3N377SAJY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LifeLinkAI-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WatchFirebase;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "m-kim-kaist.ac.kr.LifeLinkAI";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "m-kim-kaist.ac.kr.LifeLinkAI.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		C4AEFA3F29484E6C0047AB28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = "LifeLinkAI Watch App/LifeLinkAI Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeLinkAI Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = A3N377SAJY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LifeLinkAI-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WatchFirebase;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "m-kim-kaist.ac.kr.LifeLinkAI";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "m-kim-kaist.ac.kr.LifeLinkAI.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		C4AEFA4229484E6C0047AB28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = LifeLinkAI/LifeLinkAI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeLinkAI/Preview Content\"";
+				DEVELOPMENT_TEAM = A3N377SAJY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeLinkAI;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "m-kim-kaist.ac.kr.LifeLinkAI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4AEFA4329484E6C0047AB28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = LifeLinkAI/LifeLinkAI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LifeLinkAI/Preview Content\"";
+				DEVELOPMENT_TEAM = A3N377SAJY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LifeLinkAI;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "m-kim-kaist.ac.kr.LifeLinkAI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4AEFA1829484E680047AB28 /* Build configuration list for PBXProject "LifeLinkAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AEFA3B29484E6C0047AB28 /* Debug */,
+				C4AEFA3C29484E6C0047AB28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4AEFA3D29484E6C0047AB28 /* Build configuration list for PBXNativeTarget "LifeLinkAI Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AEFA3E29484E6C0047AB28 /* Debug */,
+				C4AEFA3F29484E6C0047AB28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4AEFA4129484E6C0047AB28 /* Build configuration list for PBXNativeTarget "LifeLinkAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AEFA4229484E6C0047AB28 /* Debug */,
+				C4AEFA4329484E6C0047AB28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4864A3B2A67A8F8007C951D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C4864A3D2A67A904007C951D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C4864A3F2A67A904007C951D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C4864A412A67A904007C951D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C497EE83294C5832007AD721 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C497EE85294C5839007AD721 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C497EE87294C583F007AD721 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C497EE8C294C58D4007AD721 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AEFA62294AAF3D0047AB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C4AEFA1529484E680047AB28 /* Project object */;
+}
