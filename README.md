@@ -19,9 +19,9 @@
 
 # LifeLinkAI
 
+<br> Time flies, and we often lose track of our daily activities. However, keeping a daily diary is cumbersome, making automatic recognition essential. Life Link AI provides a solution with seamless AI interaction through motion. <br>
 
-
-LifeLinkAI is a comprehensive project consisting of an iOS application and a Python server. The project leverages Firebase for data storage, real-time database functionalities, authentication, and Firestore database capabilities. The Python server processes data and generates insights using machine learning models.
+Life Link AI is a cutting-edge app designed to effortlessly capture and summarize your daily life using motion sensors in your smartwatch. Our innovative app offers a range of functionalities to ensure you never miss a moment.
 
 ## Table of Contents
 
