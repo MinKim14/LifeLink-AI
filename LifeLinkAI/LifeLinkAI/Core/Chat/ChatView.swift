@@ -61,9 +61,36 @@ struct DaySummaryView: View {
     @State private var selectedTab: Int = 0
 
     @Environment(\.colorScheme) var colorScheme
-
+    
+    
     var daySummary: [DaySummary]?
-
+    // Computed properties outside the body
+    private var uniqueSummaries: [DaySummary] {
+        var seen = Set<String>()
+        return chatViewModel.daySummaries.filter { summary in
+            let cleanedKeyword = summary.actionKeyword
+                .replacingOccurrences(of: "\n", with: "")
+                .trimmingCharacters(in: .whitespaces)
+                .lowercased()
+            if seen.contains(cleanedKeyword) {
+                return false
+            } else {
+                seen.insert(cleanedKeyword)
+                return true
+            }
+        }.map { summary in
+            var cleanedSummary = summary
+            cleanedSummary.actionKeyword = summary.actionKeyword
+                .replacingOccurrences(of: "\n", with: "")
+                .trimmingCharacters(in: .whitespaces)
+                .lowercased()
+            return cleanedSummary
+        }
+    }
+    
+    private var actionColors: [String: Color] {
+        generateColorForActions(uniqueSummaries)
+    }
 
     var body: some View {
         VStack {
@@ -78,33 +105,7 @@ struct DaySummaryView: View {
             }
             
             let summaries = chatViewModel.daySummaries
-            var uniqueSummaries: [DaySummary] {
-                var seen = Set<String>()
-                return summaries.filter { summary in
-                    let cleanedKeyword = summary.actionKeyword
-                        .replacingOccurrences(of: "\n", with: "")
-                        .trimmingCharacters(in: .whitespaces)
-                        .lowercased()
-                    if seen.contains(cleanedKeyword) {
-                        return false
-                    } else {
-                        seen.insert(cleanedKeyword)
-                        return true
-                    }
-                }.map { summary in
-                    var cleanedSummary = summary
-                    cleanedSummary.actionKeyword = summary.actionKeyword
-                        .replacingOccurrences(of: "\n", with: "")
-                        .trimmingCharacters(in: .whitespaces)
-                        .lowercased()
-                    return cleanedSummary
-                }
-            }
-            
-            var actionColors: [String: Color] {
-                generateColorForActions(uniqueSummaries)
-            }
-            
+
             VStack {
                 Picker(selection: $selectedTab, label: Text("Select View")) {
                     Text("Pie Chart").tag(0)
