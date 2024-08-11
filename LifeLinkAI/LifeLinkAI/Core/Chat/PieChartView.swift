@@ -50,47 +50,45 @@ struct PieChartView: View {
     private func timeLabel(for hour: Int) -> String {
         return String(format: "%02d", hour)
     }
+    var uniqueSummaries: [DaySummary] {
+        var seen = Set<String>()
+        return summaries.filter { summary in
+            let cleanedKeyword = summary.actionKeyword
+                .replacingOccurrences(of: "\n", with: "")
+                .trimmingCharacters(in: .whitespaces)
+                .lowercased()
+            if seen.contains(cleanedKeyword) {
+                return false
+            } else {
+                seen.insert(cleanedKeyword)
+                return true
+            }
+        }.map { summary in
+            var cleanedSummary = summary
+            cleanedSummary.actionKeyword = summary.actionKeyword
+                .replacingOccurrences(of: "\n", with: "")
+                .trimmingCharacters(in: .whitespaces)
+                .lowercased()
+            return cleanedSummary
+        }
+    }
     
+    var actionColors: [String: Color] {
+        generateColorForActions(uniqueSummaries)
+    }
+    var actionKeywordMap: [String: String] {
+        var map = [String: String]()
+        for summary in summaries {
+            let originalKeyword = summary.actionKeyword
+            let cleanedKeyword = originalKeyword
+                .replacingOccurrences(of: "\n", with: "")
+                .trimmingCharacters(in: .whitespaces)
+                .lowercased()
+            map[originalKeyword] = cleanedKeyword
+        }
+        return map
+    }
     var body: some View {
-        var uniqueSummaries: [DaySummary] {
-            var seen = Set<String>()
-            return summaries.filter { summary in
-                let cleanedKeyword = summary.actionKeyword
-                    .replacingOccurrences(of: "\n", with: "")
-                    .trimmingCharacters(in: .whitespaces)
-                    .lowercased()
-                if seen.contains(cleanedKeyword) {
-                    return false
-                } else {
-                    seen.insert(cleanedKeyword)
-                    return true
-                }
-            }.map { summary in
-                var cleanedSummary = summary
-                cleanedSummary.actionKeyword = summary.actionKeyword
-                    .replacingOccurrences(of: "\n", with: "")
-                    .trimmingCharacters(in: .whitespaces)
-                    .lowercased()
-                return cleanedSummary
-            }
-        }
-        
-        var actionColors: [String: Color] {
-            generateColorForActions(uniqueSummaries)
-        }
-        
-        var actionKeywordMap: [String: String] {
-            var map = [String: String]()
-            for summary in summaries {
-                let originalKeyword = summary.actionKeyword
-                let cleanedKeyword = originalKeyword
-                    .replacingOccurrences(of: "\n", with: "")
-                    .trimmingCharacters(in: .whitespaces)
-                    .lowercased()
-                map[originalKeyword] = cleanedKeyword
-            }
-            return map
-        }
         
         VStack {
             Text("Summary of Today's Activities")
