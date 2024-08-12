@@ -80,7 +80,6 @@ download_data/
 parsed_data/
 user_data/
 model/vmGpt/deps/
-authentication/
 
 # Distribution / packaging
 .Python
