@@ -56,7 +56,7 @@ The iOS application code is located in the `LifeLinkAI` directory. Follow the in
 
 ### Python Server
 
-The Python server code is located in the `LifeLinkAI-Server` directory. Follow the instructions in the [Server README](./LifeLinkAI-Server/README.md) to set up and run the Python server.
+The Python server code is located in the `LifeLinkAIPython` directory. Follow the instructions in the [Server README](./LifeLinkAIPython/README.md) to set up and run the Python server.
 
 - **Path:** `LifeLinkAIPython/`
 - **Setup Instructions:** [Server README](./LifeLinkAIPython/README.md)
