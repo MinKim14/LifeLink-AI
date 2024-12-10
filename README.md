@@ -9,7 +9,7 @@
   <i>#BuildWithGemini</i> <br>
 </div>
 
-# Project Video [Youtube](https://youtu.be/OPFlCPFZWHI)
+# Project Video [Video](https://drive.google.com/file/d/1IbeEEVIf_g99SceXCT5N6sMR7o7aex0n/view?usp=drive_link)
 <h2 align="center">
   <br>
   ⭐️ Life Link AI ⭐
