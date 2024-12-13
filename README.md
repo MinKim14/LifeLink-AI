@@ -16,9 +16,9 @@
   <br>
 </h2>
 # LifeLinkAI
-<br> Time flies, and we often lose track of our daily activities. However, keeping a daily diary is cumbersome, making automatic recognition essential. Life Link AI provides a solution with seamless AI interaction through motion. <br>
+<br> Sensor - Motion - Text <br>
 
-Life Link AI is a cutting-edge app designed to effortlessly capture and summarize your daily life using motion sensors in your smartwatch. Our innovative app offers a range of functionalities to ensure you never miss a moment.
+Life Link AI is a cutting-edge app designed to capture motion and to generate text.
 
 ## Table of Contents
 
@@ -30,10 +30,6 @@ Life Link AI is a cutting-edge app designed to effortlessly capture and summariz
   
 <img src="./LifeLinkAI2.png" width="1920">
 ## Project Overview
-
-Time flies, and we often lose track of our daily activities. Keeping a daily diary is cumbersome, making automatic recognition essential. LifeLinkAI provides a solution with seamless AI interaction through motion.
-
-LifeLinkAI is a cutting-edge app designed to effortlessly capture and summarize your daily life using motion sensors in your smartwatch. Our innovative app offers a range of functionalities to ensure you never miss a moment.
 
 ## Features
 
