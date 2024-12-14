@@ -30,7 +30,7 @@ Life Link AI is a cutting-edge app designed to capture motion and to generate te
 
 ## Directories
 
-# Project Video [Video](https://drive.google.com/file/d/1IbeEEVIf_g99SceXCT5N6sMR7o7aex0n/view?usp=drive_link)
+## Project Video [Video](https://drive.google.com/file/d/1IbeEEVIf_g99SceXCT5N6sMR7o7aex0n/view?usp=drive_link)
 
 ### Python Server
 
