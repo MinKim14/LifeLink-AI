@@ -9,7 +9,6 @@
   <i>#BuildWithGemini</i> <br>
 </div>
 
-# Project Video [Video](https://drive.google.com/file/d/1IbeEEVIf_g99SceXCT5N6sMR7o7aex0n/view?usp=drive_link)
 <h2 align="center">
   <br>
   ⭐️ Life Link AI ⭐
@@ -20,15 +19,7 @@
 
 Life Link AI is a cutting-edge app designed to capture motion and to generate text.
 
-## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Directories](#directories)
-  - [iOS App](#ios-app)
-  - [Python Server](#python-server)
-  
-<img src="./LifeLinkAI2.png" width="1920">
 ## Project Overview
 
 ## Features
@@ -39,12 +30,7 @@ Life Link AI is a cutting-edge app designed to capture motion and to generate te
 
 ## Directories
 
-### iOS App
-
-The iOS application code is located in the `LifeLinkAI` directory. Follow the instructions in the [iOS README](./LifeLinkAI/README.md) to set up and run the iOS application.
-
-- **Path:** `LifeLinkAI/`
-- **Setup Instructions:** [iOS README](./LifeLinkAI/README.md)
+# Project Video [Video](https://drive.google.com/file/d/1IbeEEVIf_g99SceXCT5N6sMR7o7aex0n/view?usp=drive_link)
 
 ### Python Server
 
