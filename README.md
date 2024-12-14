@@ -36,10 +36,6 @@ Life Link AI is a cutting-edge app designed to capture motion and to generate te
 1. **Seamless Motion Capture:** LifeLinkAI captures your movements using sparse motion sensors in your smartwatch. Our advanced motion-to-text model, trained with a vast dataset of motion and text pairs, transforms these vague motions into natural language descriptions.
 2. **Intelligent Activity Recognition:** Leveraging the reasoning capabilities of the Gemini large language model, LifeLinkAI accurately identifies your current activities and their metadata. Similar activities are grouped together, providing a cohesive overview of your day.
 3. **User-Friendly Labeling:** Users can easily label current sensor signals with their voice. When similar signals are detected, LifeLinkAI recognizes and applies the previously provided labels, ensuring consistent and even improving activity tracking. If an activity is unclear, the app prompts you for clarification, facilitating natural interaction through voice, language, and motion.
-4. **Comprehensive Activity Overview:** All recorded activities are displayed in a timetable and calendar format, allowing you to clearly see your daily accomplishments. Additionally, a summarized text provides an overall view of your day's activities.
-5. **Generative Visual Summaries:** At the end of each day, LifeLinkAI uses the Vertex AI generative vision model to create a summary image, giving you a visual representation of your daily experiences.
-
-With LifeLinkAI, effortlessly track, understand, and reflect on your daily life. Download now and start your journey towards a more organized and insightful life.
 
 ## Directories
 
