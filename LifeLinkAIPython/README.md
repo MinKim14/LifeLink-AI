@@ -10,7 +10,6 @@ This README provides instructions for setting up and running the LifeLinkAI Pyth
   - [Environment Variables](#environment-variables)
   - [Dependencies](#dependencies)
 - [Running the Handler](#running-the-handler)
-- [Image Generation](#image-generation)
 - [Model Descriptions](#model-descriptions)
 
 ## Setup
@@ -83,12 +82,6 @@ pip install google-cloud-aiplatform
 2. Initialize Google Cloud SDK
 Follow the instructions at [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk) to initialize the SDK for using Vertex AI on a local server.
 
-(Optional) 3. Run Daily Image Generation
-```bash
-python daily_image_generation.py
-```
-This script is to schedule generating images at the end of each day.
-
 
 ![LifeLinkAI Model](./model_overview.png)
 
@@ -97,6 +90,5 @@ This script is to schedule generating images at the end of each day.
 2. Label Comparison: If labeled pairs of previous sensor signals and corresponding action metadata exist, the model compares the new embedding with these previous embeddings. If a close match is found, the system quickly identifies the current motion based on the predefined threshold of similarity and embedding timestamp. Depending on the similarity and the context, the system decides whether to ask the user for more information or to accept the existing metadata.
 3. Sparse Poser Decoding: If no matching label pair is found, the sparse poser decodes the signal to predict the user's body motion.
 4. Motion Description Generation: The vague motion data is processed by the Motion to Text model, generating a natural language description of the current motion. This description is then passed to the Gemini model to extract detailed action categories and metadata such as destinations.
-5. Grouping and Summarization: When multiple consecutive signal chunks are processed, their descriptions are grouped by the Gemini model based on linguistic similarities. This ensures a cohesive summary of the user's activities over time, providing a clear and organized reflection of their day.
-
+5. Grouping and Summarization: When multiple consecutive signal chunks are processed, their descriptions are grouped by the Gemini model based on linguistic similarities. This ensures a cohesive summary of the user's activities over time
 
