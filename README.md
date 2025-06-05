@@ -2,7 +2,7 @@
 <img src="./LifeLinkAI.png" width="1920">
 
 ***
-Add commentMore actions
+
 <div align="center" style="color: gray;">
   <i>Gemini API Developer Competition</i> <br>
   <i>#BuildWithGemini</i> <br>
